@@ -16,39 +16,28 @@ RUN apt-get install -y \
     zip \
     unzip \
     openssh-client \
-#     libsuitesparse-dev \
-#     libceres-dev \
-#     ninja-build \    
-#     protobuf-compiler \
-#     python3-rosdep \
-#     python3-rosinstall \
-#     python3-rosinstall-generator \
-#     python3-wstool \
-#     build-essential \
+    htop \
+    shc \
+    ros-humble-gazebo-* \    
+    ros-humble-rqt-tf-tree \
+    net-tools \
+    pcl-tools \
+    libpcap-dev \
+    libepoxy-dev \
+    clang-format \
     clang \
     cmake \
-#     google-mock \
+    ros-humble-rviz-imu-plugin \
     libboost-all-dev \
-#     libcairo2-dev \
-#     libcurl4-openssl-dev \
-#     libeigen3-dev \
-#     libgflags-dev \
-#     libgoogle-glog-dev \
-#     liblua5.2-dev \
-#     lsb-release \
-#     python3-sphinx \
-#     libgmock-dev \
-#     stow \
-#     ros-noetic-move-base-flex \
-#     ros-noetic-teb-local-planner \
-#     ros-noetic-tf2-sensor-msgs \
-#     ros-noetic-geographic-msgs \
-#     libgeographic-dev \
-#     libsdl-image1.2 \
-#     libsdl-image1.2-dev \
-#     libsdl1.2-dev \
-#     liborocos-bfl-dev \
-    shc 
+    libceres-dev \
+    ros-humble-navigation2 \
+    ros-humble-nav2-bringup \
+    ros-humble-twist-mux \
+    ros-humble-spatio-temporal-voxel-layer \
+    ros-humble-perception-pcl \
+    ros-humble-pcl-msgs \
+    ros-humble-vision-opencv \
+    ros-humble-xacro
 
 # 删除缓存
 RUN rm -rf /var/lib/apt/lists/*
